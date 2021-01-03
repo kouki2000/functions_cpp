@@ -10,6 +10,6 @@ int main()
 {
     Calc cl;
     // cout << cl.is_prime(11) << endl;
-    cout << cl.permutation(12, 12) << endl;
+    cout << cl.combination(7, 3) << endl;
     return 0;
 }
