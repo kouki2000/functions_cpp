@@ -31,3 +31,16 @@ int Calc::permutation(int left, int right)
     }
     return ans;
 }
+
+int Calc::combination(int left, int right)
+{
+    int ans = 1;
+    int cnt = left;
+    for (int i = 1; i <= right; i++)
+    {
+        ans *= cnt;
+        ans /= i;
+        cnt--;
+    }
+    return ans;
+}
