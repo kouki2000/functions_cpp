@@ -9,6 +9,7 @@ int INF = 1001001001;
 int main()
 {
     Calc cl;
-    cout << cl.is_prime(11) << endl;
+    // cout << cl.is_prime(11) << endl;
+    cout << cl.permutation(12, 12) << endl;
     return 0;
 }
