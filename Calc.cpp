@@ -20,3 +20,14 @@ int Calc::is_prime(int x)
         return 1;
     }
 }
+
+int Calc::permutation(int left, int right)
+{
+    int ans = left;
+    for (int i = 1; i < right; i++)
+    {
+        left--;
+        ans *= left;
+    }
+    return ans;
+}
