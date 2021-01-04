@@ -2,11 +2,16 @@
 
 Calc クラス
 
-// 素数判定
+素数判定
 is_prime(int x, int y)
 
-// 順列
+順列
 permutation(int left, int right);
 
-// 組み合わせ
+組み合わせ
 int combination(int left, int right);
+
+Sort クラス
+
+バブルソート
+void bubble(int *array, int num);
