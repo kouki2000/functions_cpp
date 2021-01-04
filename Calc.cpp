@@ -2,6 +2,7 @@
 #include "Calc.h"
 using namespace std;
 
+// 素数判定
 int Calc::is_prime(int x)
 {
     if (x == 1)
@@ -21,6 +22,7 @@ int Calc::is_prime(int x)
     }
 }
 
+// 順列
 int Calc::permutation(int left, int right)
 {
     int ans = left;
@@ -32,6 +34,7 @@ int Calc::permutation(int left, int right)
     return ans;
 }
 
+// 組み合わせ
 int Calc::combination(int left, int right)
 {
     int ans = 1;
