@@ -11,7 +11,7 @@ int main()
 {
     Calc cl;
     Sort st;
-    int a[] = {1, 3, 2};
+    // int a[] = {1, 3, 2};
     // cout << cl.is_prime(11) << endl;
     // cout << cl.combination(7, 3) << endl;
     // st.bubble(a, 3);
@@ -19,6 +19,9 @@ int main()
     // {
     //     cout << a[i] << endl;
     // }
-    st.bit(3);
+    // st.bit(3);
+    int a[] = {2, 5, -4, 10, 3};
+    cout << cl.cumulative_sum(5, 3, a) << endl;
+
     return 0;
 }

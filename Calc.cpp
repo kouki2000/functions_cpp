@@ -47,3 +47,26 @@ int Calc::combination(int left, int right)
     }
     return ans;
 }
+
+int Calc::cumulative_sum(int N, int K, int *a)
+{
+    if (N == 0)
+    {
+        return 0;
+    }
+
+    int ans = -1001001001;
+    vector<int> s(N + 1, 0);
+
+    for (int i = 0; i < N; ++i)
+    {
+        s[i + 1] = s[i] + a[i];
+    }
+
+    for (int i = 0; i <= N - K; ++i)
+    {
+        int val = s[i + K] - s[i];
+        ans = max(ans, val);
+    }
+    return ans;
+}
