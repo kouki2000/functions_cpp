@@ -21,7 +21,7 @@ int main()
     // }
     // st.bit(3);
     int a[] = {2, 5, -4, 10, 3};
-    cout << cl.cumulative_sum(5, 3, a) << endl;
+    cout << cl.cumulative_sum(5, 1, a) << endl;
 
     return 0;
 }
