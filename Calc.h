@@ -6,8 +6,6 @@ public:
     int is_prime(int x);
     int permutation(int left, int right);
     int combination(int left, int right);
-
-    vector<int> enum_divisors(int num);
-
     int cumulative_sum(int n, int k, int *a);
+    vector<int> enum_divisors(int num);
 };
