@@ -47,3 +47,37 @@ int Calc::combination(int left, int right)
     }
     return ans;
 }
+
+//約数列挙
+vector<int> Calc::enum_divisors(int n)
+{
+    vector<int> ans;
+    // 計算量が√nだからi*iにしてる
+    for (int i = 1; i * i <= n; ++i)
+    {
+        // 約数の判定
+        if (n % i == 0)
+        {
+            ans.push_back(i);
+            // 約数の重複の確認
+            if (n / i != i)
+            {
+                ans.push_back(n / i);
+            }
+        }
+    }
+    // ソート
+    sort(ans.begin(), ans.end());
+    return ans;
+}
+
+// 累乗
+long long Calc::exponentiatoin(long long val, long long cnt)
+{
+    long long ans = val;
+    for (int i = 0; i < cnt - 1; ++i)
+    {
+        ans *= val;
+    }
+    return ans;
+}

@@ -17,3 +17,25 @@ void Sort::bubble(int *a, int num)
         }
     }
 }
+
+void Sort::bit(int num)
+{
+    for (int bit = 0; bit < (1 << num); bit++)
+    {
+        vector<int> s;
+        for (int i = 0; i < num; i++)
+        {
+            if (bit & (1 << i))
+            {
+                s.push_back(i);
+            }
+        }
+
+        cout << bit << ":{";
+        for (int i = 0; i < s.size(); i++)
+        {
+            cout << s[i] << " ";
+        }
+        cout << "}" << endl;
+    }
+}
