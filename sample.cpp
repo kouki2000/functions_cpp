@@ -11,14 +11,10 @@ int main()
 {
     Calc cl;
     Sort st;
-    int a[] = {1, 3, 2};
-    // cout << cl.is_prime(11) << endl;
-    // cout << cl.combination(7, 3) << endl;
-    // st.bubble(a, 3);
-    // rep(i, 3)
-    // {
-    //     cout << a[i] << endl;
-    // }
-    st.bit(3);
+    vector<int> ans = cl.enum_divisors(120);
+    rep(i, ans.size())
+    {
+        cout << ans[i] << endl;
+    }
     return 0;
 }
