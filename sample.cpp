@@ -11,10 +11,5 @@ int main()
 {
     Calc cl;
     Sort st;
-    vector<int> ans = cl.enum_divisors(120);
-    rep(i, ans.size())
-    {
-        cout << ans[i] << endl;
-    }
     return 0;
 }

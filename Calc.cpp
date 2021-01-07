@@ -70,3 +70,14 @@ vector<int> Calc::enum_divisors(int n)
     sort(ans.begin(), ans.end());
     return ans;
 }
+
+// 累乗
+long long Calc::exponentiatoin(long long val, long long cnt)
+{
+    long long ans = val;
+    for (int i = 0; i < cnt - 1; ++i)
+    {
+        ans *= val;
+    }
+    return ans;
+}
