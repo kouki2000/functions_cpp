@@ -81,3 +81,19 @@ long long Calc::exponentiatoin(long long val, long long cnt)
     }
     return ans;
 }
+
+//2点間の距離の最小値
+double Calc::Min_distance(double *x, double *y, int n)
+{
+    double ans = 0;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            double dx = x[i] - x[j];
+            double dy = y[i] - y[j];
+            ans = max(ans, sqrt(exponentiatoin(dx, 2) + exponentiatoin(dy, 2)));
+        }
+    }
+    return ans;
+}

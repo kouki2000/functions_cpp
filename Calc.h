@@ -8,5 +8,6 @@ public:
     int combination(int left, int right);
     int cumulative_sum(int n, int k, int *a);
     long long exponentiatoin(long long val, long long cnt);
+    double Min_distance(double *x, double *y, int n);
     vector<int> enum_divisors(int num);
 };

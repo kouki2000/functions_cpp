@@ -11,5 +11,14 @@ int main()
 {
     Calc cl;
     Sort st;
+    int n;
+    cin >> n;
+    double x[n], y[n];
+    double ans = 0;
+    rep(i, n)
+    {
+        cin >> x[i] >> y[i];
+    }
+    cout << cl.Min_distance(x, y, n) << endl;
     return 0;
 }
