@@ -39,3 +39,27 @@ void Sort::bit(int num)
         cout << "}" << endl;
     }
 }
+
+void Sort::InsertionSort(int *array, int num)
+{
+    for (int i = 1; i <= num - 1; ++i)
+    {
+        // 未整列の配列から値を取得
+        int val = array[i];
+
+        // インデックス用の変数
+        int cnt = i - 1;
+
+        while (cnt >= 0 && array[cnt] > val)
+        {
+            array[cnt + 1] = array[cnt];
+            cnt--;
+        }
+        array[cnt + 1] = val;
+        for (int i = 0; i < num; ++i)
+        {
+            cout << array[i];
+        }
+        cout << endl;
+    }
+}
