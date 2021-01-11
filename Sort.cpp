@@ -19,29 +19,6 @@ void Sort::bubble(int *a, int num)
     }
 }
 
-// AOJのバブルソート
-// int bubble(int *a, int num)
-// {
-//     int flag = 1;
-//     int cnt = 0;
-//     while (flag)
-//     {
-//         flag = 0;
-//         for (int j = num - 1; j >= 1; --j)
-//         {
-//             if (a[j] < a[j - 1])
-//             {
-//                 int temp = a[j - 1];
-//                 a[j - 1] = a[j];
-//                 a[j] = temp;
-//                 cnt++;
-//                 flag = 1;
-//             }
-//         }
-//     }
-//     return cnt;
-// }
-
 // bit全探索
 void Sort::bit(int num)
 {
@@ -90,6 +67,7 @@ void Sort::InsertionSort(int *array, int num)
     }
 }
 
+// 選択ソート
 void Sort::SelectionSort(int *array, int num)
 {
     for (int i = 0; i <= num - 1; ++i)
@@ -109,4 +87,13 @@ void Sort::SelectionSort(int *array, int num)
             array[minj] = temp;
         }
     }
+}
+
+void Sort::StableBubble(string *array, int num)
+{
+}
+
+// 安定なソート
+void Sort::StableSort(int *array, int num)
+{
 }

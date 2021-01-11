@@ -12,10 +12,6 @@ int main()
     Calc cl;
     Sort st;
     int array[] = {5, 6, 4, 2, 1, 3};
-    st.SelectionSort(array, 6);
-    rep(i, 6)
-    {
-        cout << array[i] << endl;
-    }
+    st.StableSort(array, 6);
     return 0;
 }
