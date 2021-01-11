@@ -8,4 +8,5 @@ public:
     void StableSort(int *array, int num);
     void StableBubble(string *array, int num);
     void StableSelection(int *array, int num);
+    void ShellSort(int *array, int num);
 };
