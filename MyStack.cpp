@@ -51,3 +51,45 @@ std::stack<int> MyStack::stack_func(char str, std::stack<int> st)
 //     }
 // }
 // cout << stc.top() << endl;
+
+int MyStack::queue_int(queue<int> que, int time, int limit)
+{
+    int T = time;
+    while (!que.empty())
+    {
+        if (que.front() <= limit)
+        {
+            T += que.front();
+            cout << "time: " << T << endl;
+            que.pop();
+        }
+        else
+        {
+            int temp = que.front();
+            T += limit;
+            que.pop();
+            que.push(temp - limit);
+        }
+    }
+    return T;
+}
+
+// キュー:サンプル用
+// queue<string> name;
+// queue<int> time;
+// int n = 5;
+// int q = 100;
+
+// name.push("p1");
+// name.push("p2");
+// name.push("p3");
+// name.push("p4");
+// name.push("p5");
+
+// time.push(150);
+// time.push(80);
+// time.push(200);
+// time.push(350);
+// time.push(20);
+
+// int T = 0;
