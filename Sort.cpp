@@ -97,3 +97,9 @@ void Sort::StableBubble(string *array, int num)
 void Sort::StableSort(int *array, int num)
 {
 }
+
+// シェルソート
+void Sort::ShellSort(int *array, int num)
+{
+    int cnt = 0;
+}
