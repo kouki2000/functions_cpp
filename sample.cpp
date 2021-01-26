@@ -11,14 +11,11 @@ int main()
 {
     Calc cl;
     Sort st;
-    int n;
-    cin >> n;
-    double x[n], y[n];
-    double ans = 0;
-    rep(i, n)
+    int array[] = {5, 6, 4, 2, 1, 3};
+    st.SelectionSort(array, 6);
+    rep(i, 6)
     {
-        cin >> x[i] >> y[i];
+        cout << array[i] << endl;
     }
-    cout << cl.Min_distance(x, y, n) << endl;
     return 0;
 }

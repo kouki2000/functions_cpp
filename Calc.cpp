@@ -97,3 +97,31 @@ double Calc::Min_distance(double *x, double *y, int n)
     }
     return ans;
 }
+
+// 最大公約数
+int Calc::gcd(int x, int y)
+{
+    if (x % y == 0)
+    {
+        return y;
+    }
+    else
+    {
+        return gcd(y, x % y);
+    }
+}
+
+// 最大の利益
+int Calc::MaximumProfit(int *array, int num)
+{
+    int ans = -1001001001;
+    for (int i = 0; i < num; ++i)
+    {
+        for (int j = i + 1; j < num; ++j)
+        {
+            int cnt = array[j] - array[i];
+            ans = max(ans, cnt);
+        }
+    }
+    return ans;
+}
